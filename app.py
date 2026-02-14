@@ -19,6 +19,8 @@ from model.em_xgboost_classifier import run_xgboost as load_xgb
 # page configs
 st.set_page_config(page_title="Machine Learning Assignment-2", layout="wide")
 st.title("Breast Cancer Classification")
+st.markdown("This is Machine Learning Assignment-2, done by PRERNA.")
+st.divider()
 
 # download test data
 st.subheader("Download Test Dataset")
@@ -38,12 +40,17 @@ model_dict = {
     "Ensemble Model - Random Forest": load_rf,
     "Ensemble Model - XGBoost": load_xgb
 }
+st.divider()
 
 # upload 
-uploaded_file = st.file_uploader("Upload Test Dataset (CSV)", type="csv")
+st.subheader("Upload Test Dataset (CSV)")
+uploaded_file = st.file_uploader("", type="csv")
+st.divider()
 
 # select model
-model_name = st.selectbox("Select Machine Learning Model ", model_dict.keys())
+st.subheader("Select Machine Learning Model")
+model_name = st.selectbox("", model_dict.keys())
+st.divider()
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
