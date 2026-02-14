@@ -50,4 +50,4 @@ def run_xgboost():
         "Classification Report": classification_report(test_target, pred_labels)
     }
 
-    return results
+    return xgb

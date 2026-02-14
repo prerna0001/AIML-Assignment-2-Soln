@@ -34,15 +34,17 @@ def run_decision_tree_classifier():
     pred_probs = decision_tree.predict_proba(test_features_scaled)[:, 1]
 
     # Metrics
-    results = {
-        "Accuracy": accuracy_score(test_target, pred_labels),
-        "AUC": roc_auc_score(test_target, pred_probs),
-        "Precision": precision_score(test_target, pred_labels),
-        "Recall": recall_score(test_target, pred_labels),
-        "F1": f1_score(test_target, pred_labels),
-        "MCC": matthews_corrcoef(test_target, pred_labels),
-        "Confusion Matrix": confusion_matrix(test_target, pred_labels),
-        "Classification Report": classification_report(test_target, pred_labels)
-    }
+    # results = {
+    #     "Accuracy": accuracy_score(test_target, pred_labels),
+    #     "AUC": roc_auc_score(test_target, pred_probs),
+    #     "Precision": precision_score(test_target, pred_labels),
+    #     "Recall": recall_score(test_target, pred_labels),
+    #     "F1": f1_score(test_target, pred_labels),
+    #     "MCC": matthews_corrcoef(test_target, pred_labels),
+    #     "Confusion Matrix": confusion_matrix(test_target, pred_labels),
+    #     "Classification Report": classification_report(test_target, pred_labels)
+    # }
 
-    return results
+    # return results
+    
+    return decision_tree

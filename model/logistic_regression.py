@@ -47,4 +47,4 @@ def run_logistic_regression():
         "Classification Report": classification_report(test_target, pred_labels)
     }
 
-    return results
+    return logisticRegression

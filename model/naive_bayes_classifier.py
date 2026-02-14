@@ -43,4 +43,4 @@ def run_naive_bayes_classifier():
         "Classification Report": classification_report(test_target, pred_labels)
     }
 
-    return results
+    return nb
