@@ -40,7 +40,7 @@ model_dict = {
     "Ensemble Model - Random Forest": load_rf,
     "Ensemble Model - XGBoost": load_xgb
 }
-st.divider()
+# st.divider()
 
 # upload 
 st.subheader("Upload Test Dataset (CSV)")
@@ -50,7 +50,7 @@ st.divider()
 # select model
 st.subheader("Select Machine Learning Model")
 model_name = st.selectbox("", model_dict.keys())
-st.divider()
+# st.divider()
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
