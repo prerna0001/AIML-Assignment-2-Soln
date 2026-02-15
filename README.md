@@ -99,6 +99,7 @@ https://aiml-assignment-2-soln-prerna.streamlit.app/
 ---
 
 ## Project Structure
+```text
 AIML-Assignment-2-Soln/
 │── app.py
 │── requirements.txt
@@ -118,7 +119,7 @@ AIML-Assignment-2-Soln/
 │ ├── naive_bayes_classifier.py
 │ ├── em_random_forest_classifier.py
 │ └── em_xgboost_classifier.py
-
+```
 ---
 
 ## How to Run Locally
@@ -129,7 +130,8 @@ AIML-Assignment-2-Soln/
 
 2. Run Streamlit app:
 
-    streamlit run app.py > will take you to http://localhost:8501/
+    streamlit run app.py 
+    > this on successful run, will take you to http://localhost:8501/
 
 3. Run model comparison:
 
