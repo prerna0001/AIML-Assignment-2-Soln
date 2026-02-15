@@ -70,12 +70,13 @@ All models were evaluated using the following metrics:
 
 | ML Model Name | Observation about Model Performance |
 |--------------|------------------------------------|
-| Logistic Regression | Achieved high accuracy and AUC, indicating that the dataset is well-separated and suitable for linear decision boundaries. |
-| Decision Tree | Performed well but showed slightly lower generalization due to sensitivity to data splits and potential overfitting. |
-| kNN | Delivered competitive results but was sensitive to feature scaling and choice of neighbors. |
-| Naive Bayes | Performed reasonably well despite strong independence assumptions, showing robustness on this dataset. |
-| Random Forest (Ensemble) | Achieved high recall and balanced performance by aggregating multiple decision trees, reducing overfitting. |
-| XGBoost (Ensemble) | Achieved the highest AUC 0.9918, indicating excellent discriminative ability and strong ensemble learning performance. and highest Precision among all 0.9608|
+| Logistic Regression | Achieved high accuracy (0.9580) and AUC (0.9883), indicating that the dataset is well-separated and suitable for linear decision boundaries. |
+| Decision Tree | Obtained good accuracy (0.9441) but lower AUC (0.9461), suggesting sensitivity to data splits and a tendency to overfit compared to ensemble methods. |
+| kNN | Achieved competitive accuracy (0.9371) and AUC (0.9816), but performance was sensitive to feature scaling and neighborhood selection. |
+| Naive Bayes | Delivered reasonable accuracy (0.9231) and high AUC (0.9860), demonstrating robustness despite strong feature independence assumptions. |
+| Random Forest (Ensemble) | Achieved high accuracy (0.9580) and the highest recall (0.9623), indicating strong ability to correctly identify malignant cases while reducing overfitting. |
+| XGBoost (Ensemble) | Achieved the highest AUC (0.9918) with strong precision (0.9608), demonstrating excellent discriminative power and effective ensemble learning. |
+
 
 
 ---
